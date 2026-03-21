@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>God's message for you</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="horizontal-nav">
+    <header>
+        <p>God's message for you</p>
+    </header>
+
+    <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Beginning.html">Lesson 1</a></li>
+        <li><a href="Christ.html">Lesson 2</a></li>
+        <li><a href="Response.html">Lesson 3</a></li>
+        <li><a href="NewB.html">Lesson 4</a></li>
+    </ul>
+</nav>
+
+<!-- Layout -->
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        For God so loved the world that He gave His only begotten son
+        that whosoever shall believe in Him shall not perish but have eternal life.
+    </aside>
+
+    <!-- Form Content -->
+    <main class="content">
+        <h2>Feedback Form</h2>
+
+        <form class="form">
+
+            <label for="fname">Full Name</label>
+            <input type="text" id="fname" name="fname" required>
+
+            <label for="num">Contact</label>
+            <input type="tel" id="num" name="contact" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label>Born Again</label>
+            <div class="radio-group">
+                <label><input type="radio" name="status" value="yes"> Yes</label>
+                <label><input type="radio" name="status" value="no"> No</label>
+            </div>
+
+            <label for="date">Date of receiving Christ</label>
+            <input type="date" id="date" name="date">
+
+            <label for="comment">Comment</label>
+            <textarea id="comment" name="comment" rows="5"></textarea>
+
+            <label for="rate">Rate the lessons</label>
+            <input type="range" id="rate" name="rate" min="1" max="10">
+
+            <button type="submit" class="btn">Submit</button>
+
+        </form>
+    </main>
+
+</div>
+
+<!-- Footer -->
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+.then(response => response.text())
+.then(data => {
+    document.getElementById("footer").innerHTML = data;
+});
+</script>
+
+</body>
+</html>

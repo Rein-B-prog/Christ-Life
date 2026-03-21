@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>God's message for you</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="horizontal-nav">
+    <header>
+        <p>God's message for you</p>
+    </header>
+
+    <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Beginning.html">Lesson 1</a></li>
+        <li><a href="Christ.html">Lesson 2</a></li>
+        <li><a href="Response.html">Lesson 3</a></li>
+        <li><a href="NewB.html">Lesson 4</a></li>
+    </ul>
+</nav>
+
+<!-- Layout -->
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        For God so loved the world that He gave His only begotten son
+        that whosoever shall believe in Him shall not perish but have eternal life.
+    </aside>
+
+    <!-- Content -->
+    <main class="content">
+        <h2>Beginning the Gospel Message</h2>
+
+        <p><mark><strong>THE GOSPEL MESSAGE</strong></mark></p>
+
+        <ol>
+            <li><strong>GOOD NEWS</strong></li>
+        </ol>
+
+        <p>
+            The Bible says that God created us, and He loves each of us—every person on earth.<br>
+            <mark>(For the Lord is Good and His love endures forever, His faithfulness
+            continues through all generations)</mark><br><br>
+
+            Because of His love for us, God has provided a way for each person to live forever with Him.<br>
+            Anyone can have this everlasting life with God, but there is a problem that stands in the way—
+            it's like a barrier or wall.
+        </p>
+
+        <ol start="2">
+            <li><strong>THE BARRIER</strong></li>
+        </ol>
+
+        <p><mark>A. Man's Sin</mark></p>
+
+        <p>
+            The problem is we have all sinned and face separation from God.<br><br>
+
+            <mark><strong>Sin</strong></mark> is anything we do (1 John 3:4), say (Matthew 12:37),
+            or think (Proverbs 24:9a) that is against God's law.<br>
+            It is also not doing what we should do (James 4:17).<br><br>
+
+            <mark>"We have all sinned and fall short of God's glory (Romans 3:23)"</mark>
+        </p>
+
+        <p>
+            God's standard is perfection—living without sin.<br>
+            God cannot tolerate evil (Habakkuk 1:13).
+        </p>
+
+        <p><mark><strong>B. Punishment for sin</strong></mark></p>
+
+        <p>
+            The punishment for sin is death and separation from God (Romans 6:23; Isaiah 59:2).<br><br>
+
+            Even our good deeds are like dirty rags (Isaiah 64:6).<br>
+            God is holy and just and does not leave sin unpunished (Exodus 34:7).<br><br>
+
+            So where is the hope?<br>
+            <strong><mark>The hope is found in God Himself.</mark></strong>
+        </p>
+
+        <p>
+            <strong>Continue to:</strong><br><br>
+            <a href="Christ.html" class="btn">Lesson 2</a>
+        </p>
+
+    </main>
+
+</div>
+
+<!-- Back to top -->
+<button id="backToTop" title="Go to top">↑</button>
+
+<script>
+const backToTopBtn = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+    backToTopBtn.style.display = window.scrollY > 100 ? "block" : "none";
+});
+
+backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+
+<!-- Footer -->
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+.then(res => res.text())
+.then(data => {
+    document.getElementById("footer").innerHTML = data;
+});
+</script>
+
+</body>
+</html>
